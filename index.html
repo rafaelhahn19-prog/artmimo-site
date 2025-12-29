@@ -1,13 +1,214 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>artmimo-site</title>
+    <title>Art Mimo – Troféus e Medalhas</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
+
   <body>
-    <div id="app"></div>
+    <header class="site-header" id="topo">
+      <div class="container nav">
+        <a class="logo" href="#topo" aria-label="Art Mimo (início)">
+          <img
+            class="logo-img"
+            src="/logo-artmimo.png"
+            alt="Art Mimo Troféus e Medalhas"
+          />
+          <span class="logo-text">Art <strong>Mimo</strong></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="#catalogo">Ver modelos</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Destaque">
+        <div class="container hero-content">
+          <p class="eyebrow">TROFÉUS • MEDALHAS • PREMIAÇÕES PERSONALIZADAS</p>
+          <h1>Troféus e medalhas para quem joga pra ganhar</h1>
+          <p class="lead">
+            Visual premium, acabamento impecável e personalização sob medida para campeonatos,
+            escolas, ligas e empresas.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">Explorar catálogo</a>
+            <a
+              class="btn btn-ghost"
+              href="https://wa.me/5554999699979?text=Ol%C3%A1%2C%20Art%20Mimo!%20Quero%20um%20or%C3%A7amento."
+              target="_blank"
+              rel="noopener"
+              >Pedir orçamento</a
+            >
+          </div>
+
+          <div class="hero-highlights" aria-label="Diferenciais">
+            <div class="pill">Acabamento premium</div>
+            <div class="pill">Personalização rápida</div>
+            <div class="pill">Entrega para sua região</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="catalogo" aria-label="Catálogo">
+        <div class="container">
+          <header class="section-head">
+            <h2>Catálogo por esporte</h2>
+            <p>
+              Selecione a modalidade, escolha o modelo e peça seu orçamento. Estrutura pronta para
+              virar catálogo dinâmico no futuro.
+            </p>
+          </header>
+
+          <div class="tabs" role="tablist" aria-label="Categorias do catálogo" id="catalog-tabs"></div>
+
+          <div class="active-row">
+            <p class="active-label">
+              Categoria ativa: <strong id="active-category">Futebol</strong>
+            </p>
+            <a class="link" href="#contato">Atendimento para times e eventos</a>
+          </div>
+
+          <div class="products" id="products" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona" aria-label="Como funciona">
+        <div class="container">
+          <header class="section-head">
+            <h2>Como funciona</h2>
+            <p>Rápido, objetivo e com padrão de campeão.</p>
+          </header>
+
+          <div class="steps">
+            <article class="step">
+              <h3>1) Escolha o modelo</h3>
+              <p>Selecione o esporte e o estilo de premiação ideal para sua competição.</p>
+            </article>
+            <article class="step">
+              <h3>2) Personalize</h3>
+              <p>Nome do campeonato, categoria, data e identidade visual do evento.</p>
+            </article>
+            <article class="step">
+              <h3>3) Aprovação rápida</h3>
+              <p>Você aprova os detalhes e a gente parte para a produção com foco em qualidade.</p>
+            </article>
+            <article class="step">
+              <h3>4) Entrega e conquista</h3>
+              <p>Premiação pronta para fazer história na final e no pódio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-label="Chamada">
+        <div class="container cta-band-inner">
+          <div>
+            <h2>Premie com impacto. Vença no detalhe.</h2>
+            <p>Peça seu orçamento e garanta uma premiação com cara de final.</p>
+          </div>
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5554999699979?text=Ol%C3%A1%2C%20Art%20Mimo!%20Quero%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener"
+            >Falar com a Art Mimo</a
+          >
+        </div>
+      </section>
+
+      <section class="section" id="contato" aria-label="Contato">
+        <div class="container">
+          <header class="section-head">
+            <h2>Contato</h2>
+            <p>Atendimento profissional para clubes, arenas, escolas, federações e empresas.</p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>WhatsApp</h3>
+              <p class="muted">Orçamentos e dúvidas: clique e fale direto com a Art Mimo.</p>
+              <div class="contact-lines">
+                <a
+                  class="link"
+                  href="https://wa.me/5554999699979?text=Ol%C3%A1%2C%20Art%20Mimo!%20Quero%20um%20or%C3%A7amento."
+                  target="_blank"
+                  rel="noopener"
+                  >+55 54 99969-9979</a
+                >
+                <span class="muted">Art Mimo Troféus e Medalhas</span>
+                <span class="muted">Rua Lugo Londeiro, 496 — Bairro Sippel</span>
+                <span class="muted">Tio Hugo/RS — CEP 99345-000</span>
+                <a
+                  class="link"
+                  href="https://www.google.com/maps?q=Rua%20Lugo%20Londeiro%2C%20496%20-%20Bairro%20Sippel%20-%20Tio%20Hugo%2FRS%20-%20CEP%2099345-000"
+                  target="_blank"
+                  rel="noopener"
+                  >Abrir no Google Maps</a
+                >
+              </div>
+            </div>
+
+            <form class="contact-card" id="lead-form">
+              <h3>Pedido rápido</h3>
+              <label class="field">
+                <span>Nome</span>
+                <input name="nome" autocomplete="name" placeholder="Seu nome" required />
+              </label>
+              <label class="field">
+                <span>Modalidade</span>
+                <input name="modalidade" placeholder="Futebol, futsal, vôlei..." required />
+              </label>
+              <label class="field">
+                <span>Mensagem</span>
+                <textarea name="mensagem" rows="4" placeholder="Quantidade, categoria e prazo" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Abrir no WhatsApp</button>
+              <p class="muted" id="lead-result" hidden></p>
+            </form>
+          </div>
+
+          <div class="map-wrap" aria-label="Mapa da Art Mimo">
+            <iframe
+              class="map-frame"
+              title="Mapa - Art Mimo Troféus e Medalhas"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              src="https://www.google.com/maps?q=Rua%20Lugo%20Londeiro%2C%20496%20-%20Bairro%20Sippel%20-%20Tio%20Hugo%2FRS%20-%20CEP%2099345-000&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>
+          © 2025 Art Mimo Troféus e Medalhas — Rua Lugo Londeiro, 496 — Bairro Sippel — Tio Hugo/RS —
+          CEP 99345-000 —
+          <a
+            class="link"
+            href="https://wa.me/5554999699979?text=Ol%C3%A1%2C%20Art%20Mimo!%20Quero%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+        </p>
+        <a class="link" href="#topo">Voltar ao topo</a>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
