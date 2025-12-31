@@ -342,9 +342,11 @@ img {
   margin-top: 22px;
 }
 
-.mimos-img-placeholder {
+.card .mimos-img-placeholder {
   width: 100%;
-  height: 280px;
+  height: auto;
+  max-height: 400px;
+  min-height: 280px;
   object-fit: contain;
   background-color: #fff;
   border-bottom: 3px solid rgba(212, 175, 55, 0.75);
@@ -671,8 +673,9 @@ textarea:focus {
     gap: 8px;
   }
 
-  .mimos-img-placeholder {
-    height: 220px;
+  .card .mimos-img-placeholder {
+    min-height: 200px;
+    height: auto;
   }
 
   .hero h1 {
