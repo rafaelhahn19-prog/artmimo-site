@@ -621,6 +621,16 @@ textarea:focus {
   max-width: 90ch;
 }
 
+.credits {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.credits strong {
+  color: var(--gold);
+}
+
 /* RESPONSIVO */
 @media (max-width: 900px) {
   .nav-links {
