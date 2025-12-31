@@ -37,49 +37,49 @@ const IMG = {
 // Catálogo estático (futuro: trocar por fetch + render)
 const CATALOG = {
   futebol: [
-    { title: "Kit Premium", tag: "Campeonato", img: IMG.trophyB },
-    { title: "Kit Tradicional", tag: "Torneio", img: IMG.trophyA },
-    { title: "Taças", tag: "Troféus", img: IMG.trophyB },
-    { title: "Troféu Goleiro", tag: "Individual", img: IMG.crowd },
-    { title: "Jogador Destaque", tag: "Individual", img: IMG.trophyA },
-    { title: "Troféu Goleador", tag: "Individual", img: IMG.trophyB },
-    { title: "Troféu Técnico", tag: "Comissão", img: IMG.arena },
-    { title: "Outros", tag: "Diversos", img: IMG.medalB },
-    { title: "Linha JEBS", tag: "Escolar", img: IMG.medalA },
+    { title: "Kit Premium", tag: "", img: IMG.trophyB },
+    { title: "Kit Tradicional", tag: "", img: IMG.trophyA },
+    { title: "Taças", tag: "", img: IMG.trophyB },
+    { title: "Troféu Goleiro", tag: "", img: IMG.crowd },
+    { title: "Jogador Destaque", tag: "", img: IMG.trophyA },
+    { title: "Troféu Goleador", tag: "", img: IMG.trophyB },
+    { title: "Troféu Técnico", tag: "", img: IMG.arena },
+    { title: "Outros", tag: "", img: IMG.medalB },
+    { title: "Linha JEBS", tag: "", img: IMG.medalA },
   ],
   futsal: [
-    { title: "Taça Campeão (Futsal)", tag: "Kits e Taças", img: IMG.trophyB },
-    { title: "Troféu Goleador", tag: "Troféus Individuais", img: IMG.crowd },
-    { title: "Troféu Técnico Destaque", tag: "Troféus Individuais", img: IMG.trophyB },
-    { title: "Medalha Ouro", tag: "Final", img: IMG.medalB },
-    { title: "Medalha Prata", tag: "2º lugar", img: IMG.medalA },
+    { title: "Taça Campeão (Futsal)", tag: "", img: IMG.trophyB },
+    { title: "Troféu Goleador", tag: "", img: IMG.crowd },
+    { title: "Troféu Técnico Destaque", tag: "", img: IMG.trophyB },
+    { title: "Medalha Ouro", tag: "", img: IMG.medalB },
+    { title: "Medalha Prata", tag: "", img: IMG.medalA },
   ],
   volei: [
-    { title: "Taça Campeão (Vôlei)", tag: "Kits e Taças", img: IMG.trophyB },
-    { title: "Kit Premiação Vôlei (Taças + Medalhas)", tag: "Kits e Taças", img: IMG.trophyA },
-    { title: "Troféu Melhor Levantador", tag: "Troféus Individuais", img: IMG.crowd },
-    { title: "Troféu Melhor Ataque", tag: "Troféus Individuais", img: IMG.trophyA },
-    { title: "Troféu Melhor Bloqueio", tag: "Troféus Individuais", img: IMG.trophyB },
-    { title: "Placa Comemorativa", tag: "Troféus Individuais", img: IMG.arena },
+    { title: "Taça Campeão (Vôlei)", tag: "", img: IMG.trophyB },
+    { title: "Kit Premiação Vôlei (Taças + Medalhas)", tag: "", img: IMG.trophyA },
+    { title: "Troféu Melhor Levantador", tag: "", img: IMG.crowd },
+    { title: "Troféu Melhor Ataque", tag: "", img: IMG.trophyA },
+    { title: "Troféu Melhor Bloqueio", tag: "", img: IMG.trophyB },
+    { title: "Placa Comemorativa", tag: "", img: IMG.arena },
   ],
   rodeio: [
-    { title: "Taças de Rodeio", tag: "Campeões", img: IMG.trophyB },
-    { title: "Troféus por Modalidade", tag: "Competição", img: IMG.trophyA },
-    { title: "Troféus de Homenagem", tag: "Reconhecimento", img: IMG.arena },
+    { title: "Taças de Rodeio", tag: "", img: IMG.trophyB },
+    { title: "Troféus por Modalidade", tag: "", img: IMG.trophyA },
+    { title: "Troféus de Homenagem", tag: "", img: IMG.arena },
   ],
   medalhas: [
-    { title: "Medalhas de Metal (Zamak)", tag: "Metal", img: IMG.medalB },
-    { title: "Medalhas em MDF", tag: "Personalizado", img: IMG.medalA },
-    { title: "Medalhas em Acrílico", tag: "Premium", img: IMG.medalB },
-    { title: "Medalhas Sublimadas", tag: "Coloridas", img: IMG.crowd },
+    { title: "Medalhas de Metal (Zamak)", tag: "", img: IMG.medalB },
+    { title: "Medalhas em MDF", tag: "", img: IMG.medalA },
+    { title: "Medalhas em Acrílico", tag: "", img: IMG.medalB },
+    { title: "Medalhas Sublimadas", tag: "", img: IMG.crowd },
   ],
   outros: [
-    { title: "Troféu Multi-Esportes", tag: "Versátil", img: IMG.trophyB },
-    { title: "Troféu Corporativo", tag: "Eventos e empresas", img: IMG.trophyA },
-    { title: "Placa de Homenagem", tag: "Reconhecimento", img: IMG.arena },
-    { title: "Medalha Personalizada", tag: "Identidade do evento", img: IMG.medalB },
-    { title: "Troféu Destaque", tag: "MVP / Melhor da noite", img: IMG.crowd },
-    { title: "Kit Pódio Completo", tag: "Ouro/Prata/Bronze", img: IMG.medalA },
+    { title: "Troféu Multi-Esportes", tag: "", img: IMG.trophyB },
+    { title: "Troféu Corporativo", tag: "", img: IMG.trophyA },
+    { title: "Placa de Homenagem", tag: "", img: IMG.arena },
+    { title: "Medalha Personalizada", tag: "", img: IMG.medalB },
+    { title: "Troféu Destaque", tag: "", img: IMG.crowd },
+    { title: "Kit Pódio Completo", tag: "", img: IMG.medalA },
   ],
 };
 
@@ -110,9 +110,12 @@ function createCard(item) {
   const body = document.createElement("div");
   body.className = "card-body";
 
-  const tag = document.createElement("div");
-  tag.className = "card-tag";
-  tag.textContent = item.tag;
+  if (item.tag) {
+    const tag = document.createElement("div");
+    tag.className = "card-tag";
+    tag.textContent = item.tag;
+    body.append(tag);
+  }
 
   const title = document.createElement("h3");
   title.className = "card-title";
@@ -124,14 +127,16 @@ function createCard(item) {
     [
       "Olá, Art Mimo! Quero um orçamento:",
       `Item: ${item.title}`,
-      `Categoria: ${item.tag}`,
-    ].join("\n")
+      item.tag ? `Categoria: ${item.tag}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n")
   );
   action.target = "_blank";
   action.rel = "noopener";
   action.textContent = "Solicitar no WhatsApp";
 
-  body.append(tag, title, action);
+  body.append(title, action);
   card.append(img, body);
   return card;
 }
