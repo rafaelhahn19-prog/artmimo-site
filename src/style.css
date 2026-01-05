@@ -126,6 +126,9 @@ img {
   gap: 10px;
   font-weight: 900;
   letter-spacing: 0.02em;
+  position: relative;
+  width: 40px; /* Mantém o espaço original ocupado */
+  height: 40px;
 }
 
 .logo-img {
@@ -138,12 +141,14 @@ img {
 }
 
 .logo-gif {
-  height: 80px;
-  width: auto;
+  width: 151px; /* 40mm ≈ 151px */
+  height: 151px;
   object-fit: contain;
-  display: block;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .logo-text {
@@ -665,10 +670,6 @@ textarea:focus {
 }
 
 @media (max-width: 560px) {
-  .logo-gif {
-    height: 60px;
-  }
-
   .hero-content {
     padding: 64px 0;
   }
