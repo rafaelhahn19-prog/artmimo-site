@@ -137,6 +137,15 @@ img {
   border: 1px solid rgba(212, 175, 55, 0.18);
 }
 
+.logo-gif {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
 .logo-text {
   text-transform: uppercase;
 }
@@ -656,6 +665,10 @@ textarea:focus {
 }
 
 @media (max-width: 560px) {
+  .logo-gif {
+    height: 60px;
+  }
+
   .hero-content {
     padding: 64px 0;
   }
